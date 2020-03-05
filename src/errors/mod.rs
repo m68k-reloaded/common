@@ -1,6 +1,7 @@
 use crate::Range;
 use severity::Severity;
 
+pub mod collector;
 pub mod compiler_errors;
 pub mod severity;
 
