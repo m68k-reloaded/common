@@ -5,12 +5,12 @@ pub mod collector;
 pub mod compiler_errors;
 pub mod severity;
 
-pub struct Error<'a> {
-    pub code: &'a str,
+pub struct Error<'e> {
+    pub code: &'e str,
     pub severity: Severity,
     pub source: Source,
     pub range: Range,
-    pub message: &'a str,
+    pub message: &'e str,
 }
 
 #[derive(PartialEq, Eq, Debug)]
