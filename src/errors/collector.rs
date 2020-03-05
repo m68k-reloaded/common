@@ -1,12 +1,12 @@
 use super::Error;
 
 #[derive(Default)]
-pub struct Collector<'e> {
-    errors: Vec<Error<'e>>,
+pub struct Collector {
+    errors: Vec<Error>,
 }
 
-impl<'e> Collector<'e> {
-    pub fn push(&mut self, error: Error<'e>) {
+impl Collector {
+    pub fn push(&mut self, error: Error) {
         self.errors.push(error);
     }
 
