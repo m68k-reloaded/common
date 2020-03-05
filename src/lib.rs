@@ -1,7 +1,4 @@
-pub struct Error {
-    pub range: Range,
-    pub message: String,
-}
+pub mod errors;
 
 /// Ranges have a start and end value.
 pub type Range = std::ops::Range<usize>;
