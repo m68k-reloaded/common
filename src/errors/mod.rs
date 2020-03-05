@@ -1,9 +1,11 @@
 use crate::Range;
-use severity::Severity;
+pub use collector::Collector;
+pub use compiler_errors::*;
+pub use severity::Severity;
 
-pub mod collector;
-pub mod compiler_errors;
-pub mod severity;
+mod collector;
+mod compiler_errors;
+mod severity;
 
 pub struct Error<'e> {
     pub code: &'e str,
