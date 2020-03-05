@@ -1,5 +1,9 @@
 pub mod errors;
 
+pub type Byte = u8;
+pub type Word = u16;
+pub type LongWord = u32;
+
 /// Ranges have a start and end value.
 pub type Range = std::ops::Range<usize>;
 
